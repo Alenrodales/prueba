@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('../fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.usuario {
+    font-size: 18px;
+}
+
+.logocuadro {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nombreweb {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+}
+
+.menusdespegables {
+    position: relative;
+    margin-left: 20px;
+}
+
+.icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.despegables {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    padding: 10px;
+    left: 0;
+    right: auto; 
+}
+
+.despegables ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.despegables ul li {
+    padding: 10px 20px;
+}
+
+.despegables ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menusdespegables:hover .despegables,
+.despegables:hover {
+    display: block;
+}
+
+.menusdespegables:hover .despegables {
+    left: auto;
+    right: 0;
+}
+
+footer {
+    background: rgba(44, 62, 80, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    height: auto;
+}
+
+.botondeusuarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botondeusuarios form {
+    margin: 10px;
+}
+
+.botondeusuarios button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botondeusuarios button:hover {
+    background-color: #2980b9;
+}
+
+h1 {
+    text-align: center;
+}
+
+.crear-publicacion-form {
+    max-width: 600px; 
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.crear-publicacion-form textarea {
+    width: calc(100% - 0px); 
+    min-height: 100px; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box; 
+}
+
+.crear-publicacion-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.crear-publicacion-form button:hover {
+    background-color: #45a049;
+}
+
+.publicaciones {
+    margin-top: 20px;
+    max-width: 800px; 
+    padding: 20px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.tweet-card {
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.user-handle {
+    color: #657786;
+    font-size: 14px;
+}
+
+.tweet-content {
+    margin-top: 10px;
+}
+
+.tweet-image {
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+hr {
+    width: 800px;
+    margin: 20px auto;
+    border-color: #ccc;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cposts {
+    max-width: 800px;
+    padding: 20px;
+    margin-left: auto; 
+    flex: 1;
+}
+
+.botondeusuarios {
+    max-width: 300px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-top: 40px;
+}
+
+.principal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.logocuadroinvitado {
+    align-self: center;
+    margin-right: 150px;
+}
