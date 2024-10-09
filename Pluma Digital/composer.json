@@ -1,0 +1,12 @@
+{
+    "name": "aroda/pagina2",
+    "description": "Red Social de Literatura",
+    "type": "project",
+    "authors": [
+        {
+            "name": "RedRocket"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
